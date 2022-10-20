@@ -1,0 +1,18 @@
+{
+  "name": "vite-plugin-autodeploys",
+  "version": "1.0.3",
+  "description": "vite前端自动化部署方案",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "前端自动化部署"
+  ],
+  "author": "狼牙",
+  "license": "ISC",
+  "dependencies": {
+    "archiver": "^5.3.1",
+    "ssh2": "^1.11.0"
+  }
+}
