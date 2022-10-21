@@ -1,16 +1,24 @@
 {
   "name": "vite-plugin-autodeploys",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "vite前端自动化部署方案",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jimolangyaleng/vite-plugin-autodeploys"
   },
   "keywords": [
     "前端自动化部署"
   ],
   "author": "狼牙",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jimolangyaleng/vite-plugin-autodeploys/issues"
+  },
+  "homepage": "https://github.com/jimolangyaleng/vite-plugin-autodeploys#readme",
   "dependencies": {
     "archiver": "^5.3.1",
     "ssh2": "^1.11.0"

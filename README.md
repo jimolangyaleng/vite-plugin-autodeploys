@@ -6,26 +6,26 @@
 
 ##使用
 
-1.npm install vite-plugin-autodeploys
-2.vite.config.js中引入import vitePluginLvdeploys from 'vite-plugin-lvdeploys'
-3.在plugin中添加并使用
+1.npm install vite-plugin-autodeploys   
+2.vite.config.js中引入import vitePluginAutodeploys from 'vite-plugin-autodeploys'   
+3.在plugin中添加并使用  
 ```javascript
 plugins: [
   vue(),
-  vitePluginLvdeploys({
+  vitePluginAutodeploys({
     "dev":{
       host:'xxx.xxx.xxx.xxx',//服务器IP
       port:22,//服务器端口
       username:'xxxxxx',//服务器ssh登录用户名
       password:'xxxxxx',//服务器ssh登录密码
-      serverpath:'/www/xxxx/xxxx',//服务器web目录 切记不要加/ 当前目录不存在会创建目录并且当前目录所有文件会被清空重新部署前端项目
+      serverpath:'/www/xxxx/xxxx',//服务器web目录 
     },
     "test":{
       host:'xxx.xxx.xxx.xxx',//服务器IP
       port:22,//服务器端口
       username:'xxxxxx',//服务器ssh登录用户名
       password:'xxxxxx',//服务器ssh登录密码
-      serverpath:'/www/xxxx/xxxx',//服务器web目录 切记不要加/ 当前目录不存在会创建目录并且当前目录所有文件会被清空重新部署前端项目
+      serverpath:'/www/xxxx/xxxx',//服务器web目录
     }
     //...其他自定义环境
   }),

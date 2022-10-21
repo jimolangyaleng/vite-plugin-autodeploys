@@ -195,9 +195,9 @@ function deleteFolder(path) {
   }
 }
 
-function vitePluginLvdeploy(enforce) {
+function vitePluginAutodeploys(enforce) {
   return {
-    name: 'vite-plugin-lvdeploy',
+    name: 'vite-plugin-autodeploys',
     apply: 'build',
     config(userConfig, env) {
       // 当前配置 userConfig 当前环境状态 env
@@ -215,6 +215,6 @@ function vitePluginLvdeploy(enforce) {
     },
   };
 }
-module.exports = vitePluginLvdeploy
-vitePluginLvdeploy['default'] = vitePluginLvdeploy
+module.exports = vitePluginAutodeploys
+vitePluginAutodeploys['default'] = vitePluginAutodeploys
 
